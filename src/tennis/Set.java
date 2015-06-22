@@ -6,8 +6,8 @@ public class Set {
 	
 	private ArrayList<Score> set;
 	
-	public Set(ArrayList<Score> set){
-		this.set = set;		
+	public Set(){
+		set = new ArrayList<Score>();		
 	}
 	
 	public ArrayList<Score> GetSet(){

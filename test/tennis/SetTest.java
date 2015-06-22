@@ -7,8 +7,11 @@ import org.junit.Test;
 public class SetTest {
 
 	@Test
-	public void test() {
-		fail("Not yet implemented");
+	public void AddTest() {
+		Score a = new Score(15,2);
+		Set b = new Set();
+		b.add(a);
+		assertTrue(b.contains(a));
 	}
 
 }
