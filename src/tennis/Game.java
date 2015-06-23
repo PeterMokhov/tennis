@@ -2,22 +2,22 @@ package tennis;
 
 
 public class Game {
-    private ScoreBoard scoreBoard;
-
-    public Game(ScoreBoard scoreBoard) {
-        this.scoreBoard = scoreBoard;
+    private Score score;
+    private int games;
+    public Game(Score score, int games) {
+        this.score = score;
+        this.games = games;
     }
 
-    public void score(String points) {
-//        while(!scoreBoard.hasWinner())
-        for (String point : points.split("")) {
-            if (point.equals("1")){
-                scoreBoard.player1Scores();
-            }
-            else {
-                scoreBoard.player2Scores();
-            }
-            scoreBoard.report();
-        }
+
+    
+    public void winsGame(){
+    	if(score.getPoints() > 40){
+    		games++;
+    	}
     }
+
+
+
+
 }
