@@ -27,6 +27,11 @@ public class Set {
 		return set.contains(gm);
 	}
 	
+	/**
+	 * error a set is won when the number of games of a player
+	 * reaches 6 while the number of games from the other player
+	 * is below 6
+	 */
 	public boolean SetWon(Object other) {
 		if (other instanceof Set) {
 			Set that = (Set) other;

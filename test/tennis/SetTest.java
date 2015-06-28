@@ -6,12 +6,19 @@ import org.junit.Test;
 
 public class SetTest {
 
+	Set a = new Set();
+	Game game = new Game(2,2);
+	Set b = new Set();
+	
 	@Test
-	public void AddTest() {
-		Score a = new Score(15,2);
-		Set b = new Set();
-		b.add(a);
-		assertTrue(b.contains(a));
+	public void Addtest() {
+		a.add(game);
+		assertTrue(a.contains(game));
+	}
+	
+	@Test
+	public void SetWonTest(){
+		
 	}
 
 }

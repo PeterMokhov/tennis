@@ -10,8 +10,6 @@ public class Player {
 		this.match = match;
 	}
 	
-
-
 	public String toString() {
 		return "Player [name=" + name + "]";
 	}
